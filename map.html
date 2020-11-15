@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Find our Pizzeria</title>
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_zEl53syYWsBMXMQx29X7_kGuZvU1N8E&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+    <script>
+      function initMap() {
+        const bislett = { lat: 59.919642, lng: 10.735928 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: bislett,
+        });
+        const marker = new google.maps.Marker({
+          position: bislett,
+          map: map,
+        });
+      }
+    </script>
+
+  </head>
+
+  <body>
+    <div class="top">
+      <a href="index.html"><img src="img/topbar.svg"  class="header" alt=""></a>
+      <a href="index.html"><img src="img/mobiletopbar.svg"  class="mobileheader" alt=""></a>
+  </div>
+
+<div class="menu">
+<ul style="list-style-type:none">
+    <a href="tel:22222222"><li>Call Us (22222222)</li></a>
+    <a href="map.html"><li>Find Us</li></a>
+    <a href="https://www.facebook.com/peppespizza/"><li>Facebook</li></a>
+    <a href="https://www.instagram.com/peppesno/"><li>Instagram</li></a>
+  </ul>
+</div>
+<div class="main">
+  <h1>See the map to find Mama Rosa's:</h1>
+<div id="map">
+</div>
+</div>
+
+<div class="right">
+  <h2>Our Best Sellers</h2>
+  <ul style="list-style-type:none">
+    <a href="index.html" id="margherita"><li>Margherita</li></a>
+    <a href="index.html" id="vegetariana"><li>Vegetariana</li></a>
+    <a href="index.html" id="marinara"><li>Marinara</li></a>
+    <a href="index.html" id="parma"><li>Parma</li></a>
+  </ul>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  background-color: white;
+  font-family: arial;
+
+}
+
+
+h1 {
+  font-family: lobster;
+  color: #D6162E;
+}
+
+h2 {
+  font-family: lobster;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.header {
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.mobileheader {
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  width: 25%;
+  float: left;
+  padding: 3px;
+  text-align: left;
+}
+
+.main {
+  width: 50%;
+  float: left;
+  padding: 15px;
+  text-align: center;
+}
+
+.right {
+    width: 25%;
+    float: left;
+    padding: 3px;
+    text-align: center;
+    padding-right: 2%;
+}
+
+.img-style {
+  max-width: 50%;
+  height: auto;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 400px;
+  /* The width is the width of the web page */
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .header {
+    display: block;
+  }
+  .mobileheader {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .mobileheader {
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+  }
+  .right {
+    width: 100%
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Mama Rosa's Pizzeria</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a#margherita").click(function(){
+        $("h1:first").replaceWith("<h1>Margherita</h1>");
+        $("p:first").replaceWith("If you think Margherita Pizza's are boring, think again! This simple combination of flavours will blow your mind! Mozzarella Cheese, our special sauce and Basil is all that is needed for a taste explosion!");
+      });
+      $("a#vegetariana").click(function(){
+        $("h1:first").replaceWith("<h1>Vegetariana</h1>");
+        $("p:first").replaceWith("Who would have thought saving the planet could be this tasty? We dare to claim that our veggie pizza is one of the best you can find, anywhere!");
+
+      });
+      $("a#marinara").click(function(){
+        $("h1:first").replaceWith("<h1>Marinara</h1>");
+        $("p:first").replaceWith("This pizza is straight from the sea! With Anchovies that will blow your mind, you will crave for more pizza while eating!");
+
+      });
+      $("a#parma").click(function(){
+        $("h1:first").replaceWith("<h1>Parma</h1>");
+        $("p:first").replaceWith("The delicious italian Parma ham, combined with Parmesan cheese, cherry tomatoes and Ruccola is mind-bendingly delicous.");
+
+      });
+    });
+    </script>
+
+    <div class="top">
+      <a href="index.html"><img src="img/topbar.svg"  class="header" alt=""></a>
+      <a href="index.html"><img src="img/mobiletopbar.svg"  class="mobileheader" alt=""></a>
+  </div>
+
+
+<div class="menu">
+  <ul style="list-style-type:none">
+    <a href="tel:22222222"><li>Call Us (22222222)</li></a>
+    <a href="map.html"><li>Find Us</li></a>
+    <a href="https://www.facebook.com/peppespizza/"><li>Facebook</li></a>
+    <a href="https://www.instagram.com/peppesno/"><li>Instagram</li></a>
+  </ul>
+</div>
+
+<div class="main">
+  <h1>Pepperoni</h1>
+  <p>Our delicious Pepperoni pizza with savoury peppeoroni sausage, pinapples and a spicy tomato sauce is our #1 top selling pizza by far!</p>
+  <img src="img/pepperoni.svg" class="img-style" alt="">
+  <a href="order.html" id="order"><h2>Order Now</h2></a>
+</div>
+
+<div class="right">
+  <h2>Our Best Sellers</h2>
+  <ul style="list-style-type:none">
+    <a href="#nothing" id="margherita"><li>Margherita</li></a>
+    <a href="#nothing" id="vegetariana"><li>Vegetariana</li></a>
+    <a href="#nothing" id="marinara"><li>Marinara</li></a>
+    <a href="#nothing" id="parma"><li>Parma</li></a>
+  </ul>
+</div>
+
+  </body>
+</html>
