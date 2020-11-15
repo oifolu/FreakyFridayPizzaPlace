@@ -18,6 +18,10 @@ h2 {
   box-sizing: border-box;
 }
 
+p {
+  text-align: left;
+}
+
 
 .header {
   padding: 0px;
@@ -43,6 +47,13 @@ h2 {
   float: left;
   padding: 15px;
   text-align: center;
+}
+
+.ordermain {
+  width: 50%;
+  float: left;
+  padding: 15px;
+  text-align: left;
 }
 
 .right {
